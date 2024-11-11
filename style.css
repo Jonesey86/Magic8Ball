@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/pooltable.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Sixtyfour Convergence", sans-serif;
+  background-color: #f0f0f0;
+  color: #fff;
+  margin-top: 50px;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#eightBallImage {
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+#eightBallImage:hover {
+  transform: scale(1.1);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+#eightBallImage.shake {
+  animation: shake 0.5s ease;
+}
+
+#response {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
